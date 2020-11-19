@@ -23,6 +23,13 @@ class MainActivity : AppCompatActivity() {
             R.id.navigation_notifications
         )
         badge.number = count
+        badge.backgroundColor = ContextCompat.getColor(this, R.color.teal_200)
+        badge.badgeGravity = BadgeDrawable.TOP_START
+        badge.badgeTextColor = ContextCompat.getColor(this, R.color.purple_200)
+        badge.alpha = 128
+        badge.maxCharacterCount= 2
+        badge.horizontalOffset = 20
+        badge.verticalOffset= 20
         badge.isVisible = true
     }
 
